@@ -35,7 +35,7 @@ const App = () => {
                 <AwesomeButton type="primary" ripple href="/" target="_self">Schedule With Me!</AwesomeButton>
               </div>
             </div>
-            <img src={hero} alt="" className="w-[40%] block lg:hidden" />
+            <img src={hero} alt="" className="w-[40%] hidden  md:block lg:hidden" />
           </div>
         </div>
       </div>
