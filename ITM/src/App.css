@@ -1,0 +1,55 @@
+.background {
+
+    /* ff 3.6+ */
+    background:-moz-linear-gradient(145deg, rgba(51, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%); 
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-linear-gradient(145deg, rgba(51, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-linear-gradient(145deg, rgba(51, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#333333', GradientType=1 );
+
+    /* ie 10+ */
+    background:-ms-linear-gradient(145deg, rgba(51, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background:linear-gradient(145deg, rgba(51, 51, 51, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
+}
+
+.aws-btn {
+    --button-default-height: 48px;
+    --button-default-font-size: 14px;
+    --button-default-border-radius: 6px;
+    --button-horizontal-padding: 20px;
+    --button-raise-level: 5px;
+    --button-hover-pressure: 2;
+    --transform-speed: 0.185s;
+    --button-primary-color: #ffffff;
+    --button-primary-color-dark: #1C1B2D;
+    --button-primary-color-light: #17A4CF;
+    --button-primary-color-hover: #dfe8eb;
+    --button-primary-color-active: #dfe8eb;
+    --button-primary-border: 2px solid #1C1B2D;
+    --button-secondary-color: #19B6E6;
+    --button-secondary-color-dark: #1C1B2D;
+    --button-secondary-color-light: #1C1B2D;
+    --button-secondary-color-hover: #17A4CF;
+    --button-secondary-color-active: #23B9E7;
+    --button-secondary-border: 2px solid #1C1B2D;
+    --button-anchor-color: #e36a35;
+    --button-anchor-color-dark: #702c0f;
+    --button-anchor-color-light: #ffffff;
+    --button-anchor-color-hover: #d0511b;
+    --button-anchor-color-active: #9d3e15;
+    --button-anchor-border: 2px solid #6d4b29;
+    --button-danger-color: #3db64b;
+    --button-danger-color-dark: #d2e054;
+    --button-danger-color-light: #ffffff;
+    --button-danger-color-hover: #3aae48;
+    --button-danger-color-active: #37a343;
+    --button-danger-border: 2px solid #ffffff;
+}
