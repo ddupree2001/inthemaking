@@ -13,7 +13,7 @@ const App = () => {
       <div className="background font-ptsans max-w-[1800px]">
         <div className="relative px-[50px] py-[20px]">
           <img src={redTriangle} alt="" className="absolute hidden xl:block top-0 right-0 h-full max-h-[1000px] z-0" />
-          <img src={hero} alt="Jadon Garcia" className="absolute right-[7vw] top-[100px] h-4/5 max-w-[50%] max-h-[800px] z-0 hidden lg:block" />
+          <img src={hero} alt="Jadon Garcia" className="absolute right-[7vw] top-[100px] h-4/5 max-h-[800px] z-0 hidden xl:block" />
           <nav className="flex justify-between gap-x-[80px]">
             <img src={logo} alt="" className="z-10 w-[150px] sm:w-[250px]" />
             <ul className="z-10 justify-between gap-x-[80px] text-white hidden lg:flex">
@@ -35,7 +35,7 @@ const App = () => {
                 <AwesomeButton type="primary" ripple href="/" target="_self">Schedule With Me!</AwesomeButton>
               </div>
             </div>
-            <img src={hero} alt="" className="w-[40%] hidden  md:block lg:hidden" />
+            <img src={hero} alt="" className="w-[40%] hidden  md:block xl:hidden" />
           </div>
         </div>
       </div>
