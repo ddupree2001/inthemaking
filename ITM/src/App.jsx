@@ -50,7 +50,7 @@ const App = () => {
         <div className="relative px-[50px] py-[20px] section" id="about">
           <div className="flex flex-col gap-y-[4vh] md:flex-row items-center justify-between gap-x-10">
             <div className="flex flex-col w-full md:w-[60%] gap-y-[4vh]">
-              <h2 className="text-white font-bold text-[3rem]">Achieve your <span className="text-[#caab69]">Dreams</span> One Rep at a Time</h2>
+              <h2 className="text-white font-bold text-[1.75rem] sm:text-[3rem]">Achieve your <span className="text-[#caab69]">Dreams</span> One Rep at a Time</h2>
               <div className="pl-[6.5vw] flex flex-col gap-y-[4vh]">
                 <p className="text-white text-[1.125rem] sm:text-[1.25rem]"><span className="text-[#caab69]">One-on-one training: </span>You'll receive personalized attention and customized training plans tailored to your specific goals and needs.</p>
                 <p className="text-white text-[1.125rem] sm:text-[1.25rem]"><span className="text-[#caab69]">Guaranteed results: </span>With my expertise and dedication, I'll help you achieve your fitness goals, whether you want to lose weight, build muscle, or simply improve your overall fitness level.</p>
