@@ -1,3 +1,11 @@
+* {
+    scroll-behavior: smooth;
+}
+
+.section {
+    margin-bottom: 100px;
+}
+
 .background {
 
     /* ff 3.6+ */
