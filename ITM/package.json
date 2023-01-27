@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@rcaferati/wac": "^1.0.0",
+    "framer-motion": "^8.5.4",
     "react": "^18.2.0",
     "react-awesome-button": "^7.0.5",
     "react-dom": "^18.2.0",
