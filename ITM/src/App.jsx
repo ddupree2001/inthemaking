@@ -14,6 +14,7 @@ import './App.css'
 const App = () => {
 
   const [slider, setSlider] = useState(0)
+  const [menu, setMenu] = useState(false)
 
   const testimonials = [
     {
@@ -56,15 +57,23 @@ const App = () => {
         <div className="relative px-[50px] py-[20px] section">
           <img src={redTriangle} alt="" className="absolute hidden xl:block top-0 right-0 h-full max-h-[1000px] z-0" />
           <img src={hero} alt="Jadon Garcia" className="absolute right-[7vw] top-[100px] h-4/5 max-h-[800px] z-0 hidden xl:block" />
-          <nav className="flex justify-between gap-x-[80px]">
+          <nav className="relative flex justify-between gap-x-[80px]">
             <img src={logo} alt="" className="z-10 w-[150px] sm:w-[250px]" />
             <ul className="z-10 justify-between gap-x-[80px] text-white hidden lg:flex">
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#testimonials">Testimonials</a></li>
-              <li><a href="#contact">Contact</a></li>
+                <motion.li whileHover={{scale: 1.05}}><a href="#about">About</a></motion.li>
+                <motion.li whileHover={{scale: 1.05}}><a href="#services">Services</a></motion.li>
+                <motion.li whileHover={{scale: 1.05}}><a href="#testimonials">Testimonials</a></motion.li>
+                <motion.li whileHover={{scale: 1.05}}><a href="#contact">Contact</a></motion.li>
             </ul>
-            <FiMenu className="text-white w-[30px] h-[30px] block lg:hidden cursor-pointer"/>
+            {menu && (
+              <ul className="absolute z-10 justify-between gap-x-[80px] text-white flex flex-col lg:hidden right-0 top-[5vh] gap-y-[1vh] bg-[rgba(0,0,0,0.7)] p-4 rounded-md">
+                  <motion.li whileHover={{scale: 1.05}}><a href="#about">About</a></motion.li>
+                  <motion.li whileHover={{scale: 1.05}}><a href="#services">Services</a></motion.li>
+                  <motion.li whileHover={{scale: 1.05}}><a href="#testimonials">Testimonials</a></motion.li>
+                  <motion.li whileHover={{scale: 1.05}}><a href="#contact">Contact</a></motion.li>
+              </ul>
+            )}
+            <FiMenu className="text-white w-[30px] h-[30px] block lg:hidden cursor-pointer" onClick={() => setMenu(!menu)}/>
           </nav>  
           <div className="flex mt-[5vh] md:mt-0 flex-col-reverse items-start md:flex-row gap-y-[30px] md:items-center justify-between">
             <div className="flex flex-col gap-y-[30px] w-full md:w-[40%] mt-0 mb-[5vh] sm:my-[5vh]"> 
