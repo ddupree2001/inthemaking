@@ -65,3 +65,9 @@
     --button-danger-color-active: #141414;
     --button-danger-border: 2px solid #892827;
 }
+
+@media (max-width: 640px) { 
+    .section {
+        margin-bottom: 50px;
+    }
+}

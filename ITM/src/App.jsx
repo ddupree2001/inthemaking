@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import logo from './assets/logo.png'
 import redTriangle from './assets/redTriangle.png'
 import hero from './assets/hero.png'
@@ -12,6 +12,8 @@ import { motion } from "framer-motion"
 import './App.css'
 
 const App = () => {
+
+  const [slider, setSlider] = useState(0)
 
   const testimonials = [
     {
@@ -101,7 +103,7 @@ const App = () => {
           <div className="grid grid-flow-col grid-rows-4 md:grid-rows-2 xl:grid-rows-1 justify-center mt-[8vh] gap-y-10 gap-5 xl:gap-0">
             <motion.div whileHover={{scale: 1.1}} className="relative">
               <svg width="325" height="325" viewBox="0 0 342 368" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 345V22.5C3 11.4543 11.9543 2.5 23 2.5H257.979C263.423 2.5 268.632 4.71922 272.403 8.64541L333.924 72.6948C337.502 76.4197 339.5 81.3844 339.5 86.5494V345C339.5 356.046 330.546 365 319.5 365H23C11.9543 365 3 356.046 3 345Z" stroke="#892827" stroke-width="5"/>
+                <path d="M3 345V22.5C3 11.4543 11.9543 2.5 23 2.5H257.979C263.423 2.5 268.632 4.71922 272.403 8.64541L333.924 72.6948C337.502 76.4197 339.5 81.3844 339.5 86.5494V345C339.5 356.046 330.546 365 319.5 365H23C11.9543 365 3 356.046 3 345Z" stroke="#892827" strokeWidth="5"/>
               </svg>
               <p className="absolute text-white font-bold text-[2rem] left-[40px] top-[20px]">Personal</p>
               <p className="absolute text-white text-[1.25rem] left-[60px] top-[80px]">1 on 1 - $100/session</p>
@@ -111,7 +113,7 @@ const App = () => {
             </motion.div>
             <motion.div whileHover={{scale: 1.1}} className="relative">
               <svg width="325" height="325" viewBox="0 0 342 368" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 345V22.5C3 11.4543 11.9543 2.5 23 2.5H257.979C263.423 2.5 268.632 4.71922 272.403 8.64541L333.924 72.6948C337.502 76.4197 339.5 81.3844 339.5 86.5494V345C339.5 356.046 330.546 365 319.5 365H23C11.9543 365 3 356.046 3 345Z" stroke="#892827" stroke-width="5"/>
+                <path d="M3 345V22.5C3 11.4543 11.9543 2.5 23 2.5H257.979C263.423 2.5 268.632 4.71922 272.403 8.64541L333.924 72.6948C337.502 76.4197 339.5 81.3844 339.5 86.5494V345C339.5 356.046 330.546 365 319.5 365H23C11.9543 365 3 356.046 3 345Z" stroke="#892827" strokeWidth="5"/>
               </svg>
               <p className="absolute text-white font-bold text-[2rem] left-[40px] top-[20px]">Performance</p>
               <p className="absolute text-white text-[1.25rem] left-[60px] top-[80px]">1 on 1 - $100/session</p>
@@ -121,7 +123,7 @@ const App = () => {
             </motion.div>
             <motion.div whileHover={{scale: 1.1}} className="relative">
               <svg width="325" height="325" viewBox="0 0 342 368" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 345V22.5C3 11.4543 11.9543 2.5 23 2.5H257.979C263.423 2.5 268.632 4.71922 272.403 8.64541L333.924 72.6948C337.502 76.4197 339.5 81.3844 339.5 86.5494V345C339.5 356.046 330.546 365 319.5 365H23C11.9543 365 3 356.046 3 345Z" stroke="#892827" stroke-width="5"/>
+                <path d="M3 345V22.5C3 11.4543 11.9543 2.5 23 2.5H257.979C263.423 2.5 268.632 4.71922 272.403 8.64541L333.924 72.6948C337.502 76.4197 339.5 81.3844 339.5 86.5494V345C339.5 356.046 330.546 365 319.5 365H23C11.9543 365 3 356.046 3 345Z" stroke="#892827" strokeWidth="5"/>
               </svg>
               <p className="absolute text-white font-bold text-[2rem] left-[40px] top-[20px]">Recovery</p>
               <p className="absolute text-white text-[1.25rem] left-[60px] top-[80px]">1 on 1 - $50/session</p>
@@ -131,7 +133,7 @@ const App = () => {
             </motion.div>
             <motion.div whileHover={{scale: 1.1}} className="relative">
               <svg width="325" height="325" viewBox="0 0 342 368" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 345V22.5C3 11.4543 11.9543 2.5 23 2.5H257.979C263.423 2.5 268.632 4.71922 272.403 8.64541L333.924 72.6948C337.502 76.4197 339.5 81.3844 339.5 86.5494V345C339.5 356.046 330.546 365 319.5 365H23C11.9543 365 3 356.046 3 345Z" stroke="#892827" stroke-width="5"/>
+                <path d="M3 345V22.5C3 11.4543 11.9543 2.5 23 2.5H257.979C263.423 2.5 268.632 4.71922 272.403 8.64541L333.924 72.6948C337.502 76.4197 339.5 81.3844 339.5 86.5494V345C339.5 356.046 330.546 365 319.5 365H23C11.9543 365 3 356.046 3 345Z" stroke="#892827" strokeWidth="5"/>
               </svg>
               <p className="absolute text-white font-bold text-[2rem] left-[40px] top-[20px]">Speed</p>
               <p className="absolute text-white text-[1.25rem] left-[60px] top-[80px]">1 on 1 - $40/session</p>
@@ -146,34 +148,40 @@ const App = () => {
             <h2 className="text-white text-center font-bold text-[1.75rem] sm:text-[3rem]">Real <span className="text-[#caab69]">Results</span> from Real People</h2>
           </div>
           <div className="relative flex justify-center">
-            <div className="rounded-md w-[80vw] md:w-[70vw] max-w-[1200px] flex overflow-x-auto overflow-y-auto h-[300px] bg-[#caab69]">
+            <div className="rounded-md w-[70vw] md:w-[70vw] max-w-[1200px] flex overflow-x-auto overflow-y-auto h-[300px] bg-[#caab69]">
               {testimonials.map((testimonial, index) => (
-                <div className="relative flex-[0_0_100%] px-16 py-8" id={index} key={index}>
+                <motion.div animate={{ x: slider}} transition={{duration: 0.5}} className="relative flex-[0_0_100%] px-16 py-8" id={index} key={index}>
                   <p className="text-[1.25rem] sm:text-[1.5rem] font-bold mb-[2vh]">{testimonial.name}</p>
-                  <p className="text-[1.125rem] sm:text-[1.25rem]">{testimonial.quote}</p>
-                </div>
+                  <p className="text-[1.125rem] sm:text-[1.25rem] pb-8">{testimonial.quote}</p>
+                </motion.div>
               ))}
             </div>
-                  <AiOutlineLeft className="text-[#892827] absolute top-[50%] left-[5%] md:left-[12.5%] mt-[-15px] sm:mt-[-25px] w-[25px] h-[25px] sm:w-[50px] sm:h-[50px] cursor-pointer" />
-                  <AiOutlineRight className="text-[#892827] absolute top-[50%] right-[5%] md:right-[12.5%] mt-[-15px] sm:mt-[-25px] w-[25px] h-[25px] sm:w-[50px] sm:h-[50px] cursor-pointer"  />
+                  <AiOutlineLeft className="text-[#892827] absolute top-[50%] left-[8%] md:left-0 lg:left-[5%] mt-[-15px] sm:mt-[-25px] w-[25px] h-[25px] sm:w-[50px] sm:h-[50px] cursor-pointer" onClick={() => slider<0&& setSlider(slider + (0.7 * window.innerWidth))}/>
+                  <AiOutlineRight className="text-[#892827] absolute top-[50%] right-[8%] md:right-0 lg:right-[5%] mt-[-15px] sm:mt-[-25px] w-[25px] h-[25px] sm:w-[50px] sm:h-[50px] cursor-pointer" onClick={() => slider>(-6.9*0.7*window.innerWidth) && setSlider(slider - (0.7 * window.innerWidth))} />
           </div>
         </div>
-        {/* <div className="relative px-[50px] py-[20px] section" id="contact">
+        <div className="relative px-[50px] py-[20px] section" id="contact">
           <div className="flex justify-center">
             <h2 className="text-white text-center font-bold text-[1.75rem] sm:text-[3rem]">Let's <span className="text-[#caab69]">Begin</span> Your Journey Together</h2>
           </div>
-          <div className="flex justify-center items-center gap-x-20 mt-[5vh]">
-            <img src={instagram} alt="" />
+          <div className="flex flex-col lg:flex-row justify-center items-center gap-x-20 gap-y-[5vh] mt-[5vh]">
+            <img src={instagram} alt="" className="hidden sm:block" />
             <div className="flex flex-col gap-y-[5vh]">
-              <p className="text-white font-bold text-[2rem]">Phone: (408) 489-7662</p>
-              <p className="text-white font-bold text-[2rem]">Email: j.don95@outlook.com</p>
-              <p className="text-white font-bold text-[2rem]">Instagram: @inthemaking.pt</p>
+              <p className="text-white font-bold text-[1.5rem sm:text-[2rem]">Phone: (408) 489-7662</p>
+              <p className="text-white font-bold text-[1.5rem sm:text-[2rem]">Email: j.don95@outlook.com</p>
+              <p className="text-white font-bold text-[1.5rem sm:text-[2rem]">Instagram: @inthemaking.pt</p>
               <div>
                 <AwesomeButton type="secondary" ripple href="#services" target="_self">Book A Session!</AwesomeButton>
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
+        <div className="flex justify-center"> 
+          <div className=" h-[1px] bg-white w-[90%] mb-5"></div>
+        </div>
+        <div className="flex justify-center py-[5vh]">
+          <p className="text-white text-[1rem] sm:text-[1.125rem]">© 2022 - In The Making | All Rights Reserved</p>
+        </div>
       </div>
     </div>
   )
