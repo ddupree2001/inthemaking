@@ -53,7 +53,7 @@ const App = () => {
 
   return (
     <div className="flex justify-center">
-      <div className="font-ptsans max-w-[1800px]">
+      <div className="scroll-smooth font-ptsans max-w-[1800px]">
         <div className="relative px-[50px] py-[20px] section">
           <img src={redTriangle} alt="" className="absolute hidden xl:block top-0 right-0 h-full max-h-[1000px] z-0" />
           <img src={hero} alt="Jadon Garcia" className="absolute right-[7vw] top-[100px] h-4/5 max-h-[800px] z-0 hidden xl:block" />
