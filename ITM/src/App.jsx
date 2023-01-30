@@ -165,8 +165,8 @@ const App = () => {
                 </motion.div>
               ))}
             </div>
-                  <AiOutlineLeft className="text-[#892827] absolute top-[50%] left-[8%] md:left-0 lg:left-[5%] mt-[-15px] sm:mt-[-25px] w-[25px] h-[25px] sm:w-[50px] sm:h-[50px] cursor-pointer" onClick={() => slider<0&& setSlider(slider + (0.7 * window.innerWidth))}/>
-                  <AiOutlineRight className="text-[#892827] absolute top-[50%] right-[8%] md:right-0 lg:right-[5%] mt-[-15px] sm:mt-[-25px] w-[25px] h-[25px] sm:w-[50px] sm:h-[50px] cursor-pointer" onClick={() => slider>(-6.9*0.7*window.innerWidth) && setSlider(slider - (0.7 * window.innerWidth))} />
+                  <AiOutlineLeft className="text-[#892827] absolute top-[50%] left-[8%] md:left-0 lg:left-[5%] mt-[-15px] sm:mt-[-25px] w-[25px] h-[25px] sm:w-[50px] sm:h-[50px] cursor-pointer" onClick={() => slider<0 && (0.7*window.innerWidth)<1200 ? setSlider(slider + (0.7 * window.innerWidth)) : setSlider(slider+1200)}/>
+                  <AiOutlineRight className="text-[#892827] absolute top-[50%] right-[8%] md:right-0 lg:right-[5%] mt-[-15px] sm:mt-[-25px] w-[25px] h-[25px] sm:w-[50px] sm:h-[50px] cursor-pointer" onClick={() => slider>(-6.9*0.7*window.innerWidth) && (0.7*window.innerWidth)<1200 ? setSlider(slider - (0.7 * window.innerWidth)) : setSlider(slider-1200)} />
           </div>
         </div>
         <div className="relative px-[50px] py-[20px] section" id="contact">
