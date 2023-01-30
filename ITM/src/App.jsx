@@ -152,7 +152,7 @@ const App = () => {
               {testimonials.map((testimonial, index) => (
                 <motion.div animate={{ x: slider}} transition={{duration: 0.5}} className="relative flex-[0_0_100%] px-16 py-8" id={index} key={index}>
                   <p className="text-[1.25rem] sm:text-[1.5rem] font-bold mb-[2vh]">{testimonial.name}</p>
-                  <p className="text-[1.125rem] sm:text-[1.25rem] pb-8">{testimonial.quote}</p>
+                  <p className="text-[1.125rem] sm:text-[1.25rem] pb-8">"{testimonial.quote}"</p>
                 </motion.div>
               ))}
             </div>
