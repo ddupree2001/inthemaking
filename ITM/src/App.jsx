@@ -12,9 +12,11 @@ import { motion } from "framer-motion"
 import './App.css'
 
 const App = () => {
-
-  const [slider, setSlider] = useState(0)
+  const [curr, setCurr] = useState(0)
   const [menu, setMenu] = useState(false)
+
+  const prev = () => setCurr((curr) => (curr === 0 ? testimonials.length - 1 : curr - 1))
+  const next = () => setCurr((curr) => (curr === testimonials.length - 1 ? 0 : curr + 1))
 
   const testimonials = [
     {
@@ -58,7 +60,7 @@ const App = () => {
           <img src={redTriangle} alt="" className="absolute hidden xl:block top-0 right-0 h-full max-h-[1000px] z-0" />
           <img src={hero} alt="Jadon Garcia" className="absolute right-[7vw] top-[100px] h-4/5 max-h-[800px] z-0 hidden xl:block" />
           <nav className="relative flex justify-between gap-x-[80px]">
-            <img src={logo} alt="" className="z-10 w-[150px] sm:w-[250px]" />
+            <a href="/"><img src={logo} alt="" className="z-10 w-[150px] sm:w-[250px]" /></a>
             <ul className="z-10 justify-between gap-x-[80px] text-white hidden lg:flex">
                 <motion.li whileHover={{scale: 1.05}}><a href="#about">About</a></motion.li>
                 <motion.li whileHover={{scale: 1.05}}><a href="#services">Services</a></motion.li>
@@ -157,16 +159,22 @@ const App = () => {
             <h2 className="text-white text-center font-bold text-[1.75rem] sm:text-[3rem]">Real <span className="text-[#caab69]">Results</span> from Real People</h2>
           </div>
           <div className="relative flex justify-center">
-            <div className="rounded-md w-[70vw] md:w-[70vw] max-w-[1200px] flex overflow-x-auto overflow-y-auto h-[300px] bg-[#caab69]">
+            <div className="relative rounded-md w-[80vw] md:w-[70vw] max-w-[1200px] flex overflow-x-hidden overflow-y-auto h-[300px] bg-[#caab69]">
               {testimonials.map((testimonial, index) => (
-                <motion.div animate={{ x: slider}} transition={{duration: 0.5}} className="relative flex-[0_0_100%] px-16 py-8" id={index} key={index}>
-                  <p className="text-[1.25rem] sm:text-[1.5rem] font-bold mb-[2vh]">{testimonial.name}</p>
-                  <p className="text-[1.125rem] sm:text-[1.25rem] pb-8">"{testimonial.quote}"</p>
-                </motion.div>
+                  <div className="flex-[0_0_100%] py-10 px-16 transition-transform ease-out duration-500" style={{transform: `translateX(-${curr*100}%)`}} key={index}>
+                    <p className="text-[1.25rem] sm:text-[1.5rem] font-bold mb-[2vh]">{testimonial.name}</p>
+                    <p className="text-[1.125rem] sm:text-[1.25rem] pb-8">"{testimonial.quote}"</p>
+                  </div>
               ))}
+              <div className="absolute inset-0 flex items-center justify-between">
+                <button onClick={prev}>
+                  <AiOutlineLeft size={40} color="#892827" />
+                </button>
+                <button onClick={next}>
+                  <AiOutlineRight size={40} color="#892827"/>
+                </button>
+              </div>
             </div>
-                  <AiOutlineLeft className="text-[#892827] absolute top-[50%] left-[8%] md:left-0 lg:left-[5%] mt-[-15px] sm:mt-[-25px] w-[25px] h-[25px] sm:w-[50px] sm:h-[50px] cursor-pointer" onClick={() => slider<0 && (0.7*window.innerWidth)<1200 ? setSlider(slider + (0.7 * window.innerWidth)) : setSlider(slider+1200)}/>
-                  <AiOutlineRight className="text-[#892827] absolute top-[50%] right-[8%] md:right-0 lg:right-[5%] mt-[-15px] sm:mt-[-25px] w-[25px] h-[25px] sm:w-[50px] sm:h-[50px] cursor-pointer" onClick={() => slider>(-6.9*0.7*window.innerWidth) && (0.7*window.innerWidth)<1200 ? setSlider(slider - (0.7 * window.innerWidth)) : setSlider(slider-1200)} />
           </div>
         </div>
         <div className="relative px-[50px] py-[20px] section" id="contact">
