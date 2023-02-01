@@ -111,7 +111,7 @@ const App = () => {
             <h2 className="text-white text-center font-bold text-[1.75rem] sm:text-[3rem]">Transform Your Body and Mind with <span className="text-[#caab69]">Personalized </span> Training</h2>
             <p className="text-white text-center text-[1.125rem] sm:text-[1.25rem] w-full max-w-[700px]">I offer a wide range of personal training, performance training and recovery sessions. Each session can be tailored to your individual goals and needs.</p>
           </div>
-          <div className="grid grid-flow-row grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center xl:justify-between mt-[8vh] gap-y-10 gap-5 xl:gap-0">
+          <div className="grid grid-flow-row grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center place-items-center xl:justify-between mt-[8vh] gap-y-10 gap-5 xl:gap-0">
             <motion.div whileHover={{scale: 1.05}} className="relative cursor-pointer" href="/">
             <svg width="311" height="646" viewBox="0 0 311 646" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M3 623V23C3 11.9543 11.9543 3 23 3H232.522C238.425 3 244.027 5.60822 247.827 10.1261L303.306 76.0836C306.337 79.6882 308 84.2472 308 88.9574L308 623C308 634.046 299.046 643 288 643H23C11.9543 643 3 634.046 3 623Z" stroke="#892827" stroke-width="5"/>
