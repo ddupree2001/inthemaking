@@ -56,10 +56,10 @@ body{
     --button-anchor-color-hover: #161616;
     --button-anchor-color-active: #141414;
     --button-anchor-border: 2px solid #892827;
-    --button-danger-color: #202020;
+    --button-danger-color: #141414;
     --button-danger-color-dark: #892827;
     --button-danger-color-light: #ffffff;
-    --button-danger-color-hover: #161616;
+    --button-danger-color-hover: #080808;
     --button-danger-color-active: #141414;
     --button-danger-border: 2px solid #892827;
 }
