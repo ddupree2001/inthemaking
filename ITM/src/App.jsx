@@ -217,11 +217,11 @@ const App = () => {
             <h2 className="text-white text-center font-bold text-[1.75rem] sm:text-[3rem]">Let's <span className="text-[#caab69]">Begin</span> Your Journey Together</h2>
           </div>
           <div className="flex flex-col lg:flex-row justify-center items-center gap-x-20 gap-y-[5vh] mt-[5vh]">
-            <img src={instagram} alt="" className="hidden sm:block" />
+          <a href="https://www.instagram.com/inthemaking.pt/"><img src={instagram} alt="" className="hidden sm:block" /></a>
             <div className="flex flex-col gap-y-[5vh]">
-              <p className="text-white font-bold text-[1.5rem sm:text-[2rem]">Phone: (408) 489-7662</p>
-              <p className="text-white font-bold text-[1.5rem sm:text-[2rem]">Email: j.don95@outlook.com</p>
-              <p className="text-white font-bold text-[1.5rem sm:text-[2rem]">Instagram: @inthemaking.pt</p>
+              <a href="tel:408-489-7662"><p className="text-white font-bold text-[1.5rem sm:text-[2rem]">Phone: (408) 489-7662</p></a>
+              <a href="mailto:j.don95@outlook.com"><p className="text-white font-bold text-[1.5rem sm:text-[2rem]">Email: j.don95@outlook.com</p></a>
+              <a href="https://www.instagram.com/inthemaking.pt/"><p className="text-white font-bold text-[1.5rem sm:text-[2rem]">Instagram: @inthemaking.pt</p></a>
               <div>
                 <AwesomeButton type="secondary" ripple href="#services" target="_self">Book A Session!</AwesomeButton>
               </div>
