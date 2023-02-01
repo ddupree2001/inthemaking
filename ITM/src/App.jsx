@@ -56,7 +56,7 @@ const App = () => {
   return (
     <div className="flex justify-center">
       <div className="scroll-smooth font-ptsans max-w-[1800px]">
-        <div className="relative px-[50px] py-[20px] section">
+        <div className="relative px-[30px] sm:px-[50px] py-[20px] section">
           <img src={redTriangle} alt="" className="absolute hidden xl:block top-0 right-0 h-full max-h-[1000px] z-0" />
           <img src={hero} alt="Jadon Garcia" className="absolute right-[7vw] top-[100px] h-4/5 max-h-[800px] z-0 hidden xl:block" />
           <nav className="relative flex justify-between gap-x-[80px]">
@@ -91,7 +91,7 @@ const App = () => {
             <img src={hero} alt="" className="w-[40%] hidden  md:block xl:hidden" />
           </div>
         </div>
-        <div className="relative px-[50px] py-[20px] section" id="about">
+        <div className="relative px-[30px] sm:px-[50px] py-[20px] section" id="about">
           <div className="flex flex-col gap-y-[4vh] md:flex-row items-center justify-between gap-x-10">
             <div className="flex flex-col w-full md:w-[60%] gap-y-[4vh]">
               <h2 className="text-white font-bold text-[1.75rem] sm:text-[3rem]">Achieve your <span className="text-[#caab69]">Dreams</span> One Rep at a Time</h2>
@@ -106,7 +106,7 @@ const App = () => {
             <img src={workoutplan} alt="workout plan" className="w-[40%] max-w-[381px]"/>
           </div>
         </div>
-        <div className="relative px-[50px] py-[20px] section" id="services">
+        <div className="relative px-[30px] sm:px-[50px] py-[20px] section" id="services">
           <div className="flex flex-col items-center justify-center gap-y-[4vh]">
             <h2 className="text-white text-center font-bold text-[1.75rem] sm:text-[3rem]">Transform Your Body and Mind with <span className="text-[#caab69]">Personalized </span> Training</h2>
             <p className="text-white text-center text-[1.125rem] sm:text-[1.25rem] w-full max-w-[700px]">I offer a wide range of personal training, performance training and recovery sessions. Each session can be tailored to your individual goals and needs.</p>
@@ -189,7 +189,7 @@ const App = () => {
             </motion.div>
           </div>
         </div>
-        <div className="relative px-[50px] py-[20px] section" id="testimonials">
+        <div className="relative px-[30px] sm:px-[50px] py-[20px] section" id="testimonials">
           <div className="flex justify-center mb-[5vh]">
             <h2 className="text-white text-center font-bold text-[1.75rem] sm:text-[3rem]">Real <span className="text-[#caab69]">Results</span> from Real People</h2>
           </div>
@@ -212,7 +212,7 @@ const App = () => {
             </div>
           </div>
         </div>
-        <div className="relative px-[50px] py-[20px] section" id="contact">
+        <div className="relative px-[30px] sm:px-[50px] py-[20px] section" id="contact">
           <div className="flex justify-center">
             <h2 className="text-white text-center font-bold text-[1.75rem] sm:text-[3rem]">Let's <span className="text-[#caab69]">Begin</span> Your Journey Together</h2>
           </div>
