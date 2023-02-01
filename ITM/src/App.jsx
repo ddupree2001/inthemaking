@@ -113,24 +113,24 @@ const App = () => {
           </div>
           <div className="grid grid-flow-row grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center xl:justify-between mt-[8vh] gap-y-10 gap-5 xl:gap-0">
             <motion.div whileHover={{scale: 1.05}} className="relative cursor-pointer" href="/">
-            <svg width="385" height="665" viewBox="0 0 385 665" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 642V23C3 11.9543 11.9543 3 23 3H291.583C296.836 3 301.878 5.06632 305.619 8.75257L376.036 78.1245C379.852 81.8835 382 87.0158 382 92.3719L382 642C382 653.046 373.046 662 362 662H23C11.9543 662 3 653.046 3 642Z" stroke="#892827" stroke-width="5"/>
+            <svg width="311" height="646" viewBox="0 0 311 646" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 623V23C3 11.9543 11.9543 3 23 3H232.522C238.425 3 244.027 5.60822 247.827 10.1261L303.306 76.0836C306.337 79.6882 308 84.2472 308 88.9574L308 623C308 634.046 299.046 643 288 643H23C11.9543 643 3 634.046 3 623Z" stroke="#892827" stroke-width="5"/>
             </svg>
-            <div className="absolute left-[40px] top-[20px] flex flex-col gap-y-[20px]">
+            <div className="absolute left-[20px] top-[30px] flex flex-col gap-y-[30px]">
               <p className="text-white font-bold text-[2rem]">1 on 1 Training</p>
-              <p className="text-white text-[1.25rem] italic w-[330px]">Customized fitness sessions to meet individual goals with monthly updates and evaluations. Focus on proper form for optimal results.</p>
+              <p className="text-white text-[1rem] italic w-[270px]">Customized fitness sessions to meet individual goals with monthly updates and evaluations. Focus on proper form for optimal results.</p>
               <div className="flex flex-col ml-[20px] gap-y-[5px]">
-                <p className="text-white text-[1.25rem]">Drop in - $85</p>
-                <p className="text-white text-[1.25rem]">8 sessions/month - $560</p>
-                <p className="text-white text-[1.25rem]">12 sessions/month - $780</p>
-                <p className="text-white text-[1.25rem]">16 sessions/month - $960</p>
+                <p className="text-white text-[1rem]">Drop in - $85</p>
+                <p className="text-white text-[1rem]">8 sessions/month - $560</p>
+                <p className="text-white text-[1rem]">12 sessions/month - $780</p>
+                <p className="text-white text-[1rem]">16 sessions/month - $960</p>
               </div>
               <div className="flex flex-col ml-[20px] gap-y-[5px]">
-                <p className="text-white text-[1.25rem]">Monday: 5-6am, 10-11am, 4-6pm</p>
-                <p className="text-white text-[1.25rem]">Tuesday: 5-6am, 10-11am</p>
-                <p className="text-white text-[1.25rem]">Wednesday: 5-6am, 10-11am, 6pm</p>
-                <p className="text-white text-[1.25rem]">Thursday: 5-6am, 10-11am</p>
-                <p className="text-white text-[1.25rem]">Friday: 6am</p>
+                <p className="text-white text-[1rem]">Monday: 5-6am, 10-11am, 4-6pm</p>
+                <p className="text-white text-[1rem]">Tuesday: 5-6am, 10-11am</p>
+                <p className="text-white text-[1rem]">Wednesday: 5-6am, 10-11am, 6pm</p>
+                <p className="text-white text-[1rem]">Thursday: 5-6am, 10-11am</p>
+                <p className="text-white text-[1rem]">Friday: 6am</p>
               </div>
               <div className="ml-[20px]">
                   <AwesomeButton type="danger" ripple href="#services" target="_self" className="">Let's Get To Work!</AwesomeButton>
@@ -138,24 +138,24 @@ const App = () => {
             </div>
             </motion.div>
             <motion.div whileHover={{scale: 1.05}} className="relative cursor-pointer" href="/">
-            <svg width="385" height="665" viewBox="0 0 385 665" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 642V23C3 11.9543 11.9543 3 23 3H291.583C296.836 3 301.878 5.06632 305.619 8.75257L376.036 78.1245C379.852 81.8835 382 87.0158 382 92.3719L382 642C382 653.046 373.046 662 362 662H23C11.9543 662 3 653.046 3 642Z" stroke="#892827" stroke-width="5"/>
+            <svg width="311" height="646" viewBox="0 0 311 646" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 623V23C3 11.9543 11.9543 3 23 3H232.522C238.425 3 244.027 5.60822 247.827 10.1261L303.306 76.0836C306.337 79.6882 308 84.2472 308 88.9574L308 623C308 634.046 299.046 643 288 643H23C11.9543 643 3 634.046 3 623Z" stroke="#892827" stroke-width="5"/>
             </svg>
-            <div className="absolute left-[40px] top-[20px] flex flex-col gap-y-[20px] mr-[30px]">
+            <div className="absolute left-[20px] top-[30px] flex flex-col gap-y-[30px]">
               <p className="text-white font-bold text-[2rem]">Small Group PT</p>
-              <p className="text-white text-[1.25rem] italic w-[330px]">Customized workout programs with monthly evaluations. Small group setting with fun, friendly atmosphere. Achieve individual fitness goals.</p>
+              <p className="text-white text-[1rem] italic w-[270px]">Customized workout programs with monthly evaluations. Small group setting with fun, friendly atmosphere. Achieve individual fitness goals.</p>
               <div className="flex flex-col ml-[20px] gap-y-[5px]">
-                <p className="text-white text-[1.25rem]">Drop in - $60</p>
-                <p className="text-white text-[1.25rem]">8 sessions/month - $390</p>
-                <p className="text-white text-[1.25rem]">12 sessions/month - $530</p>
-                <p className="text-white text-[1.25rem]">16 sessions/month - $630</p>
+                <p className="text-white text-[1rem]">Drop in - $60</p>
+                <p className="text-white text-[1rem]">8 sessions/month - $390</p>
+                <p className="text-white text-[1rem]">12 sessions/month - $530</p>
+                <p className="text-white text-[1rem]">16 sessions/month - $630</p>
               </div>
               <div className="flex flex-col ml-[20px] gap-y-[5px]">
-                <p className="text-white text-[1.25rem]">Monday: 7-9am, 5-6pm</p>
-                <p className="text-white text-[1.25rem]">Tuesday: 7-9am</p>
-                <p className="text-white text-[1.25rem]">Wednesday: 7-9am, 5-6pm</p>
-                <p className="text-white text-[1.25rem]">Thursday: 7-9am</p>
-                <p className="text-white text-[1.25rem]">Friday: 7-9am</p>
+                <p className="text-white text-[1rem]">Monday: 7-9am, 5-6pm</p>
+                <p className="text-white text-[1rem]">Tuesday: 7-9am</p>
+                <p className="text-white text-[1rem]">Wednesday: 7-9am, 5-6pm</p>
+                <p className="text-white text-[1rem]">Thursday: 7-9am</p>
+                <p className="text-white text-[1rem]">Friday: 7-9am</p>
               </div>
               <div className="ml-[20px]">
                   <AwesomeButton type="danger" ripple href="#services" target="_self" className="">Let's Get To Work!</AwesomeButton>
@@ -163,24 +163,24 @@ const App = () => {
             </div>
             </motion.div>
             <motion.div whileHover={{scale: 1.05}} className="relative cursor-pointer" href="/">
-            <svg width="385" height="665" viewBox="0 0 385 665" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M3 642V23C3 11.9543 11.9543 3 23 3H291.583C296.836 3 301.878 5.06632 305.619 8.75257L376.036 78.1245C379.852 81.8835 382 87.0158 382 92.3719L382 642C382 653.046 373.046 662 362 662H23C11.9543 662 3 653.046 3 642Z" stroke="#892827" stroke-width="5"/>
+            <svg width="311" height="646" viewBox="0 0 311 646" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 623V23C3 11.9543 11.9543 3 23 3H232.522C238.425 3 244.027 5.60822 247.827 10.1261L303.306 76.0836C306.337 79.6882 308 84.2472 308 88.9574L308 623C308 634.046 299.046 643 288 643H23C11.9543 643 3 634.046 3 623Z" stroke="#892827" stroke-width="5"/>
             </svg>
-            <div className="absolute left-[40px] top-[20px] flex flex-col gap-y-[20px] mr-[30px]">
+            <div className="absolute left-[20px] top-[30px] flex flex-col gap-y-[30px]">
               <p className="text-white font-bold text-[2rem]">Large Group PT</p>
-              <p className="text-white text-[1.25rem] italic w-[330px]">Customized workout programs for large groups with monthly evaluations. Fun, friendly environment. Achieve individual fitness goals.</p>
+              <p className="text-white text-[1rem] italic w-[270px]">Customized workout programs for large groups with monthly evaluations. Fun, friendly environment. Achieve individual fitness goals.</p>
               <div className="flex flex-col ml-[20px] gap-y-[5px]">
-                <p className="text-white text-[1.25rem]">Drop in - $30</p>
-                <p className="text-white text-[1.25rem]">8 sessions/month - $200</p>
-                <p className="text-white text-[1.25rem]">12 sessions/month - $270</p>
-                <p className="text-white text-[1.25rem]">16 sessions/month - $320</p>
+                <p className="text-white text-[1rem]">Drop in - $30</p>
+                <p className="text-white text-[1rem]">8 sessions/month - $200</p>
+                <p className="text-white text-[1rem]">12 sessions/month - $270</p>
+                <p className="text-white text-[1rem]">16 sessions/month - $320</p>
               </div>
               <div className="flex flex-col ml-[20px] gap-y-[5px]">
-                <p className="text-white text-[1.25rem]">Monday: 7-8pm</p>
-                <p className="text-white text-[1.25rem]">Tuesday: <span className="text-[#892827]">X</span></p>
-                <p className="text-white text-[1.25rem]">Wednesday: 7-8pm</p>
-                <p className="text-white text-[1.25rem]">Thursday: <span className="text-[#892827]">X</span></p>
-                <p className="text-white text-[1.25rem]">Friday: 5-6pm, Saturday: 9-10am</p>
+                <p className="text-white text-[1rem]">Monday: 7-8pm</p>
+                <p className="text-white text-[1rem]">Tuesday: <span className="text-[#892827]">X</span></p>
+                <p className="text-white text-[1rem]">Wednesday: 7-8pm</p>
+                <p className="text-white text-[1rem]">Thursday: <span className="text-[#892827]">X</span></p>
+                <p className="text-white text-[1rem]">Friday: 5-6pm, Saturday: 9-10am</p>
               </div>
               <div className="ml-[20px]">
                   <AwesomeButton type="danger" ripple href="#services" target="_self" className="">Let's Get To Work!</AwesomeButton>
