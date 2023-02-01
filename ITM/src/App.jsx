@@ -111,46 +111,81 @@ const App = () => {
             <h2 className="text-white text-center font-bold text-[1.75rem] sm:text-[3rem]">Transform Your Body and Mind with <span className="text-[#caab69]">Personalized </span> Training</h2>
             <p className="text-white text-center text-[1.125rem] sm:text-[1.25rem] w-full max-w-[700px]">I offer a wide range of personal training, performance training and recovery sessions. Each session can be tailored to your individual goals and needs.</p>
           </div>
-          <div className="grid grid-flow-col grid-rows-4 md:grid-rows-2 xl:grid-rows-1 justify-center mt-[8vh] gap-y-10 gap-5 xl:gap-0">
-            <motion.div whileHover={{scale: 1.1}} className="relative">
-              <svg width="325" height="325" viewBox="0 0 342 368" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 345V22.5C3 11.4543 11.9543 2.5 23 2.5H257.979C263.423 2.5 268.632 4.71922 272.403 8.64541L333.924 72.6948C337.502 76.4197 339.5 81.3844 339.5 86.5494V345C339.5 356.046 330.546 365 319.5 365H23C11.9543 365 3 356.046 3 345Z" stroke="#892827" strokeWidth="5"/>
-              </svg>
-              <p className="absolute text-white font-bold text-[2rem] left-[40px] top-[20px]">Personal</p>
-              <p className="absolute text-white text-[1.25rem] left-[60px] top-[80px]">1 on 1 - $100/session</p>
-              <p className="absolute text-white text-[1.25rem] left-[60px] top-[130px]">Small Group - $60/session</p>
-              <p className="absolute text-white text-[1.25rem] left-[60px] top-[180px]">Large Group - $100/session</p>
-              <AwesomeButton type="danger" ripple href="#services" target="_self" className="absolute left-[60px] top-[235px]">Let's Get To Work!</AwesomeButton>
+          <div className="grid grid-flow-row grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 justify-center xl:justify-between mt-[8vh] gap-y-10 gap-5 xl:gap-0">
+            <motion.div whileHover={{scale: 1.05}} className="relative cursor-pointer" href="/">
+            <svg width="385" height="665" viewBox="0 0 385 665" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 642V23C3 11.9543 11.9543 3 23 3H291.583C296.836 3 301.878 5.06632 305.619 8.75257L376.036 78.1245C379.852 81.8835 382 87.0158 382 92.3719L382 642C382 653.046 373.046 662 362 662H23C11.9543 662 3 653.046 3 642Z" stroke="#892827" stroke-width="5"/>
+            </svg>
+            <div className="absolute left-[40px] top-[20px] flex flex-col gap-y-[20px]">
+              <p className="text-white font-bold text-[2rem]">1 on 1 Training</p>
+              <p className="text-white text-[1.25rem] italic w-[330px]">Customized fitness sessions to meet individual goals with monthly updates and evaluations. Focus on proper form for optimal results.</p>
+              <div className="flex flex-col ml-[20px] gap-y-[5px]">
+                <p className="text-white text-[1.25rem]">Drop in - $85</p>
+                <p className="text-white text-[1.25rem]">8 sessions/month - $560</p>
+                <p className="text-white text-[1.25rem]">12 sessions/month - $780</p>
+                <p className="text-white text-[1.25rem]">16 sessions/month - $960</p>
+              </div>
+              <div className="flex flex-col ml-[20px] gap-y-[5px]">
+                <p className="text-white text-[1.25rem]">Monday: 5-6am, 10-11am, 4-6pm</p>
+                <p className="text-white text-[1.25rem]">Tuesday: 5-6am, 10-11am</p>
+                <p className="text-white text-[1.25rem]">Wednesday: 5-6am, 10-11am, 6pm</p>
+                <p className="text-white text-[1.25rem]">Thursday: 5-6am, 10-11am</p>
+                <p className="text-white text-[1.25rem]">Friday: 6am</p>
+              </div>
+              <div className="ml-[20px]">
+                  <AwesomeButton type="danger" ripple href="#services" target="_self" className="">Let's Get To Work!</AwesomeButton>
+              </div> 
+            </div>
             </motion.div>
-            <motion.div whileHover={{scale: 1.1}} className="relative">
-              <svg width="325" height="325" viewBox="0 0 342 368" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 345V22.5C3 11.4543 11.9543 2.5 23 2.5H257.979C263.423 2.5 268.632 4.71922 272.403 8.64541L333.924 72.6948C337.502 76.4197 339.5 81.3844 339.5 86.5494V345C339.5 356.046 330.546 365 319.5 365H23C11.9543 365 3 356.046 3 345Z" stroke="#892827" strokeWidth="5"/>
-              </svg>
-              <p className="absolute text-white font-bold text-[2rem] left-[40px] top-[20px]">Performance</p>
-              <p className="absolute text-white text-[1.25rem] left-[60px] top-[80px]">1 on 1 - $100/session</p>
-              <p className="absolute text-white text-[1.25rem] left-[60px] top-[130px]">Small Group - $55/session</p>
-              <p className="absolute text-white text-[1.25rem] left-[60px] top-[180px]">Large Group - <span className="text-[#892827]">X</span></p>
-              <AwesomeButton type="danger" ripple href="#services" target="_self" className="absolute left-[60px] top-[235px]">Let's Get To Work!</AwesomeButton>
+            <motion.div whileHover={{scale: 1.05}} className="relative cursor-pointer" href="/">
+            <svg width="385" height="665" viewBox="0 0 385 665" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 642V23C3 11.9543 11.9543 3 23 3H291.583C296.836 3 301.878 5.06632 305.619 8.75257L376.036 78.1245C379.852 81.8835 382 87.0158 382 92.3719L382 642C382 653.046 373.046 662 362 662H23C11.9543 662 3 653.046 3 642Z" stroke="#892827" stroke-width="5"/>
+            </svg>
+            <div className="absolute left-[40px] top-[20px] flex flex-col gap-y-[20px] mr-[30px]">
+              <p className="text-white font-bold text-[2rem]">Small Group PT</p>
+              <p className="text-white text-[1.25rem] italic w-[330px]">Customized workout programs with monthly evaluations. Small group setting with fun, friendly atmosphere. Achieve individual fitness goals.</p>
+              <div className="flex flex-col ml-[20px] gap-y-[5px]">
+                <p className="text-white text-[1.25rem]">Drop in - $60</p>
+                <p className="text-white text-[1.25rem]">8 sessions/month - $390</p>
+                <p className="text-white text-[1.25rem]">12 sessions/month - $530</p>
+                <p className="text-white text-[1.25rem]">16 sessions/month - $630</p>
+              </div>
+              <div className="flex flex-col ml-[20px] gap-y-[5px]">
+                <p className="text-white text-[1.25rem]">Monday: 7-9am, 5-6pm</p>
+                <p className="text-white text-[1.25rem]">Tuesday: 7-9am</p>
+                <p className="text-white text-[1.25rem]">Wednesday: 7-9am, 5-6pm</p>
+                <p className="text-white text-[1.25rem]">Thursday: 7-9am</p>
+                <p className="text-white text-[1.25rem]">Friday: 7-9am</p>
+              </div>
+              <div className="ml-[20px]">
+                  <AwesomeButton type="danger" ripple href="#services" target="_self" className="">Let's Get To Work!</AwesomeButton>
+              </div> 
+            </div>
             </motion.div>
-            <motion.div whileHover={{scale: 1.1}} className="relative">
-              <svg width="325" height="325" viewBox="0 0 342 368" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 345V22.5C3 11.4543 11.9543 2.5 23 2.5H257.979C263.423 2.5 268.632 4.71922 272.403 8.64541L333.924 72.6948C337.502 76.4197 339.5 81.3844 339.5 86.5494V345C339.5 356.046 330.546 365 319.5 365H23C11.9543 365 3 356.046 3 345Z" stroke="#892827" strokeWidth="5"/>
-              </svg>
-              <p className="absolute text-white font-bold text-[2rem] left-[40px] top-[20px]">Recovery</p>
-              <p className="absolute text-white text-[1.25rem] left-[60px] top-[80px]">1 on 1 - $50/session</p>
-              <p className="absolute text-white text-[1.25rem] left-[60px] top-[130px]">Small Group - <span className="text-[#892827]">X</span></p>
-              <p className="absolute text-white text-[1.25rem] left-[60px] top-[180px]">Large Group - <span className="text-[#892827]">X</span></p>
-              <AwesomeButton type="danger" ripple href="#services" target="_self" className="absolute left-[60px] top-[235px]">Let's Get To Work!</AwesomeButton>
-            </motion.div>
-            <motion.div whileHover={{scale: 1.1}} className="relative">
-              <svg width="325" height="325" viewBox="0 0 342 368" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3 345V22.5C3 11.4543 11.9543 2.5 23 2.5H257.979C263.423 2.5 268.632 4.71922 272.403 8.64541L333.924 72.6948C337.502 76.4197 339.5 81.3844 339.5 86.5494V345C339.5 356.046 330.546 365 319.5 365H23C11.9543 365 3 356.046 3 345Z" stroke="#892827" strokeWidth="5"/>
-              </svg>
-              <p className="absolute text-white font-bold text-[2rem] left-[40px] top-[20px]">Speed</p>
-              <p className="absolute text-white text-[1.25rem] left-[60px] top-[80px]">1 on 1 - $40/session</p>
-              <p className="absolute text-white text-[1.25rem] left-[60px] top-[130px]">Small Group - <span className="text-[#892827]">X</span></p>
-              <p className="absolute text-white text-[1.25rem] left-[60px] top-[180px]">Large Group - <span className="text-[#892827]">X</span></p>
-              <AwesomeButton type="danger" ripple href="#services" target="_self" className="absolute left-[60px] top-[235px]">Let's Get To Work!</AwesomeButton>
+            <motion.div whileHover={{scale: 1.05}} className="relative cursor-pointer" href="/">
+            <svg width="385" height="665" viewBox="0 0 385 665" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 642V23C3 11.9543 11.9543 3 23 3H291.583C296.836 3 301.878 5.06632 305.619 8.75257L376.036 78.1245C379.852 81.8835 382 87.0158 382 92.3719L382 642C382 653.046 373.046 662 362 662H23C11.9543 662 3 653.046 3 642Z" stroke="#892827" stroke-width="5"/>
+            </svg>
+            <div className="absolute left-[40px] top-[20px] flex flex-col gap-y-[20px] mr-[30px]">
+              <p className="text-white font-bold text-[2rem]">Large Group PT</p>
+              <p className="text-white text-[1.25rem] italic w-[330px]">Customized workout programs for large groups with monthly evaluations. Fun, friendly environment. Achieve individual fitness goals.</p>
+              <div className="flex flex-col ml-[20px] gap-y-[5px]">
+                <p className="text-white text-[1.25rem]">Drop in - $30</p>
+                <p className="text-white text-[1.25rem]">8 sessions/month - $200</p>
+                <p className="text-white text-[1.25rem]">12 sessions/month - $270</p>
+                <p className="text-white text-[1.25rem]">16 sessions/month - $320</p>
+              </div>
+              <div className="flex flex-col ml-[20px] gap-y-[5px]">
+                <p className="text-white text-[1.25rem]">Monday: 7-8pm</p>
+                <p className="text-white text-[1.25rem]">Tuesday: <span className="text-[#892827]">X</span></p>
+                <p className="text-white text-[1.25rem]">Wednesday: 7-8pm</p>
+                <p className="text-white text-[1.25rem]">Thursday: <span className="text-[#892827]">X</span></p>
+                <p className="text-white text-[1.25rem]">Friday: 5-6pm, Saturday: 9-10am</p>
+              </div>
+              <div className="ml-[20px]">
+                  <AwesomeButton type="danger" ripple href="#services" target="_self" className="">Let's Get To Work!</AwesomeButton>
+              </div> 
+            </div>
             </motion.div>
           </div>
         </div>
